@@ -1,0 +1,7 @@
+STORE "task" AS STRING WITH ANY VALUE
+STORE "isDone" AS BOOLEAN WITH TRUE OR FALSE
+
+IF "isDone" TRUE
+    DISPLAY "Task Selesai Dikerjakan"
+ELSE
+    DISPLAY "Task Belum Dikerjakan"
