@@ -1,6 +1,10 @@
-STORE "task" AS STRING WITH ANY VALUE
-STORE "isDone" AS BOOLEAN WITH TRUE OR FALSE
+STORE "amount" AS NUMBER WITH ANY VALUE
 
+    FOR "i" from 0 in "amount"
+        STORE "task[i]" AS STRING WITH ANY VALUE
+    END FOR
+
+STORE "isDone[i]" AS BOOLEAN WITH TRUE OR FALSE
 IF "isDone" TRUE
     DISPLAY "Task Selesai Dikerjakan"
 ELSE
